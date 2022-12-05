@@ -11,6 +11,7 @@ public class ex02 {
         System.out.println(firstEl);
         System.out.println(linkList);
     }
+
     public static LinkedList<Integer> linkedList() {
         LinkedList<Integer> lst = new LinkedList<>();
         lst.addLast(1);
@@ -20,17 +21,20 @@ public class ex02 {
         System.out.println(lst);
         return lst;
     }
+
     public static LinkedList enqueue(Object a, LinkedList lst) {
         lst.addLast(a);
         System.out.println(lst);
         return lst;
     }
-    public static Object dequeue(LinkedList lst){
+
+    public static Object dequeue(LinkedList lst) {
         Object firstEl = lst.getFirst();
         lst.removeFirst();
         return firstEl;
     }
-    public static Object first(LinkedList lst){
+
+    public static Object first(LinkedList lst) {
         Object firstEl = lst.getFirst();
         return firstEl;
     }
